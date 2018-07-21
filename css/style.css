@@ -1,0 +1,907 @@
+.bodyPosition{
+    /* background: url("./../img/bg-1.png");
+    background-size: contain;
+    width:100%;
+    overflow-x: hidden; */
+    background: url(./../img/bg-1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    overflow: hidden;
+}
+.mainstyle{
+    max-width: 1280px;
+    margin:auto;
+}
+
+.headerStyle{
+    width: 1280px;
+    height: 56px;
+    opacity: 0.9;
+    background-color: #2a2a2a;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    display:flex;
+    justify-content:space-between;
+}
+.grid_layout{
+    max-width: 1280px;
+    margin:auto;
+  }
+.hamburger{
+    width: 35px;
+    height: 5px;
+    background-color: #ffffff;
+    margin: 6px 0;
+    display:block;
+
+}
+.hamburgerIconPos{
+    margin:auto 30px;
+}
+.IconPos{
+    padding:15px 0px;
+}
+.flexContainer{
+    margin:0px 50px;
+    width:5%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.userIconPos{
+    width:20px;
+}
+.notificationIconPos{
+    width:17px;
+}
+.squareIconPos{
+    width:16px;
+    height:16px;
+}
+.ApplicationContainer{
+    
+    background-color: #ffffff;
+    margin:auto 50px;
+    height: 48px;
+    display:flex;
+    justify-content:space-between;
+}
+.ApplicationStyle{
+    font:bold 12px Gotham;
+    color: #717171;
+}
+.AllApplications{
+    width:15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 10px;
+}
+.triangle-down {
+	width: 0;
+	height: 0;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-top: 10px solid #ed0295;
+}
+.ApplicationStatus{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width:60%;
+}
+.line{
+    width: 2px;
+    height: 20px;
+    background-color: #9b9b9b;
+}
+.ApplicationStatusStyle{
+    font:bold 12px Gotham;
+    color: #444444;
+}
+#ProductionId{
+    color:#ed0295;
+    padding:0px 5px;
+    font:500 12px Gotham;
+}
+.Style{
+    font:500 12px Gotham;
+    color: #686868;
+}
+.Container{
+    display: flex;
+}
+#BuildId{
+    color:#ed0295;
+    padding:0px 5px;
+    font:500 12px Gotham;
+}
+#IntakeId{
+    color:#ed0295;
+    padding:0px 5px;
+    font:500 12px Gotham;
+}
+
+.greenLiveCircle{
+    /* margin: 0 0 0 0; */
+    background-color: #00ff00;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    margin-right:10px;
+    /* box-sizing: border-box; */
+    
+}
+.security{
+    font:bold 12px Gotham;
+    color:#ffffff;
+    padding:0px 5px 0px 16px;
+    box-sizing: border-box;
+}
+.securityBackground{
+    padding:17px 0px;
+    background-color: #3c3c3c;
+}
+/* css new */
+.ContainerBody{
+    /* align-self: center; */
+    align:center;
+    height:610px;
+    width:90%;
+    margin:30px 70px;
+    /* border:4px solid black; */
+    background-color:transparent;
+    display:flex;
+    justify-content:center;
+    /* background-color: aqua; */
+    /* align-items:center; */
+    
+  }
+  #FirstDiv{
+    width:20px;
+    flex:1;
+    background-color:transparent;
+    margin:0px 5px;
+    
+  }
+  #middleDiv{
+    flex:1;
+     width:20px;
+    background-color:transparent;
+    margin:0px 5px;
+  }
+  #cornerDiv{
+    flex:2;
+     width:20px;
+    background-color:transparent;
+    margin:0px 5px;
+    
+  }
+  #cost{
+    padding:0px 10px;
+    height:50%;
+    background-color:#ffffff;
+    margin-bottom:10px;
+    transition-timing-function:  ease-out  ;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    
+  }
+  #Monitoring{
+    padding:0px 10px;
+    height:50%;
+    background-color:#ffffff;
+    transition-timing-function:  ease-out  ;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  }
+  #Inventory{
+    padding:0px 10px;
+    height:50%;
+    background-color:#ffffff;
+    margin-bottom:10px;
+    transition-timing-function:  ease-out  ;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  }
+  #Utilisation{
+     padding:0px 10px;
+     height:50%;
+     background-color:#ffffff;
+     transition-timing-function:  ease-out  ;    
+     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  }
+  #Compliance{
+    padding:0px 10px;
+    height:80%;
+    background-color:#ffffff;
+    transition-timing-function:  ease-out  ;
+    margin-bottom:10px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    
+  }
+  #Storage{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding:0px 20px;
+     height:20%;
+     background-color:#ffffff;
+     transition-timing-function:  ease-out  ;
+     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  }
+.TextContainer{
+    display: flex;
+    justify-content: center;
+    
+}
+#TextStylecost{
+    font:bold 16px Gotham;
+    color:#717171;
+    padding:20px 5px;
+}
+#TextStyleMonitor{
+    font:bold 16px Gotham;
+    color:#717171;
+    padding:20px 5px;
+}
+#TextStyleInventory{
+    font:bold 16px Gotham;
+    color:#717171;
+    padding:20px 5px;
+}
+#TextStyleUtilisation{
+    font:bold 16px Gotham;
+    color:#717171;
+    padding:20px 5px;
+}
+#TextStyleCompliance{
+    font:bold 16px Gotham;
+    color:#717171;
+    padding:20px 5px;
+}
+#TextStyleStorage{
+    font:bold 16px Gotham;
+    color:#717171;
+    padding:20px 5px;
+}
+#twentyStyle{
+    margin:50px 0px;
+    font:bold 28px Gotham;
+    color:#ed0295;
+} 
+#DayRunRate{
+    margin:50px 0px;
+    padding:0px 5px;
+    font:300 12px Gotham;
+    color:#ed0295;
+}
+#threeStyle{
+    margin-top:50px;
+    font:bold 28px Gotham;
+    color:#ed0295;
+}
+#Requests{
+    margin-top:50px;
+    padding:0px 5px;
+    font:300 12px Gotham;
+    color:#ed0295;
+}
+#sixStyle{
+    margin-top:50px;
+    font:bold 28px Gotham;
+    color:#ed0295;
+}
+#current{
+    margin-top:50px;
+    padding:0px 5px;
+    font:300 12px Gotham;
+    color:#ed0295;
+}
+#nineStyle{
+    margin:50px 0px;
+    font:bold 28px Gotham;
+    color:#ed0295;
+}
+#overall{
+    margin:58px 0px;
+    padding:0px 5px;
+    font:300 12px Gotham;
+    color:#ed0295;
+}
+#Visitors{
+    font:300 12px Gotham;
+    color:#777777;
+    text-align: center;
+}
+#Last30Days{
+    font:300 12px Gotham;
+    color:#777777;
+    padding:2px 5px;
+}
+#LastValue{
+    font:500 16px;
+}
+#UniqueValue{
+    font:500 16px;
+}
+#UniqueVisitor{
+    font:300 12px Gotham;
+    color:#777777;
+    padding:2px 5px;
+}
+#InstanceValue{
+    font:500 14px Gotham;
+    color:#ed0295;
+}
+#InstanceText{
+    font:500 10px Gotham;
+    color:#555555;
+}
+.bottomContainer{
+    text-align: center;
+    margin: 55px 0px;
+}
+.bottomFlexContainer{
+    margin:85px 0px;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#tmngValue{
+    font:500 14px Gotham;
+    color:#ed0295;
+}
+#tmng{
+    font:500 10px Gotham;
+    color:#555555;
+}
+#soclValue{
+    font:500 14px Gotham;
+    color:#ed0295;
+}
+#socl{
+    font:500 10px Gotham;
+    color:#555555;
+}
+#reblValue{
+    font:500 14px Gotham;
+    color:#ed0295;
+}
+#rebl{
+    /* padding:0px 5px; */
+    font:500 10px Gotham;
+    color:#555555;
+}
+#lbsValue{
+    font:500 14px Gotham;
+    color:#ed0295;
+}
+#lbs{
+    padding:0px 3px;
+    font:500 10px Gotham;
+    color:#555555;
+}
+#asgValue{
+    padding:0px 3px;
+    font:500 14px Gotham;
+    color:#ed0295;
+}
+#asg{
+    
+    font:500 10px Gotham;
+    color:#555555;
+}
+#s3Value{
+    font:500 14px Gotham;
+    color:#ed0295;
+}
+#s3{
+   
+    font:500 10px Gotham;
+    color:#555555;
+}
+#ebsValue{
+    font:500 14px Gotham;
+    color:#ed0295;
+}
+#ebs{
+    padding:0px 5px;
+    font:500 10px Gotham;
+    color:#555555;
+}
+.bottomFlexContainerUtilization{
+    margin:53px 0px;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#cpu{
+    padding:0px 5px;
+    font:500 10px Gotham;
+    color:#555555;
+}
+#io{
+    padding:0px 9px;
+    font:500 10px Gotham;
+    color:#555555;
+}
+#disk{
+    padding:0px 5px;
+    font:500 10px Gotham;
+    color:#555555;
+}
+.half-circle {
+    width: 20px;
+    height: 10px; /* as the half of the width */
+    background-color:transparent;
+    border-top-left-radius: 110px;  /* 100px of height + 10px of border */
+    border-top-right-radius: 110px; /* 100px of height + 10px of border */
+    border: 5px solid #ed0295;;
+    border-bottom: 0;
+    margin:3px 0px;
+}
+.graphPos{
+    text-align:center;
+}
+.graphStyle{
+    width:304px;
+    height:304px;
+}
+#scanned{
+    font:500 10px Gotham;
+    color:#aaaaaa;
+}
+.bottomFlexContainerCompliance{
+    margin:55px 0px;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#itemsValue{
+    padding:0px 8px;
+    font:500 20px Gotham;
+    color:#ed0295;
+}
+#items{
+    padding:0px 5px;
+    font:500 12px Gotham;
+    color:#777777;
+}
+#autoValue{
+    padding:0px 20px;
+    font:500 20px Gotham;
+    color:#ed0295;
+}
+#auto{
+    padding:0px 5px;
+    font:500 12px Gotham;
+    color:#777777;
+}
+#remainingValue{
+    padding:0px 35px;
+    font:500 20px Gotham;
+    color:#ed0295;
+}
+#remaining{
+    padding:0px 5px;
+    font:500 12px Gotham;
+    color:#777777;
+}
+#issuesValue{
+    font:500 20px Gotham;
+    color:#ed0295;
+}
+#line{
+    color: #777777;
+}
+#new{
+    font:500 10px Gotham;
+    color:#ed0295;
+}
+#issues{
+    font:500 12px Gotham;
+    color:#777777;
+}
+.containerCompliance{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Storage{
+    padding:0px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.StorageTextContainer{
+    display:flex;
+    /* justify-content: space-between; */
+    align-items: center;
+}
+#inuseValue{
+    font:bold 28px Gotham;
+    color: #ed0295;
+}
+#inuse{
+    padding:0px 5px;
+    font:300 12px Gotham;
+    color: #ed0295;
+}
+#active{
+    
+    height:80%;
+    background-color:#ffffff;
+    margin-bottom:10px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+     transition-timing-function:  ease-out  ;
+    /* flex:8; */
+    display: none;
+}
+
+#monActive{
+    
+    height:20%;
+    background-color:#ffffff;
+    margin-bottom:10px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    transition: 4s  ;
+    /* flex:8; */
+    display: none;
+}
+#monSubActive{
+    height:80%;
+    background-color:#ffffff;
+    margin-bottom:10px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    transition: 4s  ;
+    /* flex:8; */
+    display: none;
+}
+#utActive{
+    
+    height:20%;
+    background-color:#ffffff;
+    margin-bottom:10px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    transition: 4s  ;
+    /* flex:8; */
+    display: none;
+}
+#utSubActive{
+    height:80%;
+    background-color:#ffffff;
+    margin-bottom:10px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    transition: 4s  ;
+    /* flex:8; */
+    display: none;
+}
+#activemid{
+    
+    height:80%;
+    background-color:#ffffff;
+    margin-bottom:10px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    transition: 4s  ;
+    /* flex:8; */
+    display: none;
+}
+#subActivemid{
+    height:20%;
+    background-color:#ffffff;
+    margin-bottom:10px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    transition: 4s  ;
+    /* flex:8; */
+    display: none;
+}
+
+#inActive{
+    height:50%;
+    background-color:#ffffff;
+    margin-bottom:10px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    transition: 4s  ;
+    /* flex:8; */
+    display: none;
+}
+
+#inActive2{
+    height:50%;
+    background-color:#ffffff;
+    margin-bottom:10px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    transition: 4s  ;
+    /* flex:8; */
+    display: none;
+}
+#inActive3{
+    height:50%;
+    background-color:#ffffff;
+    margin-bottom:10px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    transition: 4s  ;
+    /* flex:8; */
+    display: none;
+}
+#inActivemidfirstone{
+    height:50%;
+    background-color:#ffffff;
+    margin-bottom:10px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    transition: 4s  ;
+    /* flex:8; */
+    display: none;
+}
+#inActivemidfirsttwo{
+    height:50%;
+    background-color:#ffffff;
+    margin-bottom:10px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    transition: 4s  ;
+    /* flex:8; */
+    display: none;
+}
+#inActivecornerfirstone{
+    height:50%;
+    background-color:#ffffff;
+    margin-bottom:10px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    transition: 4s  ;
+    /* flex:8; */
+    display: none;
+}
+#inActivecornerfirsttwo{
+    height:50%;
+    background-color:#ffffff;
+    margin-bottom:10px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    transition: 4s  ;
+    /* flex:8; */
+    display: none;
+}
+
+
+/* nav bar */
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #000;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #777777;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* cost active css */
+.costGraph{
+    padding:20px;
+}
+.costGraphPos{
+    width:500px;
+    height:300px;
+    padding:0px 40px;
+}
+.TextContaineractive{
+    display: flex;
+    justify-content: flex-start;
+    padding: 0px 60px;
+   
+}
+#costActiveValue{
+    margin:50px 0px;
+    font:bold 28px Gotham;
+    color:#ed0295;
+}
+#costActiveData{
+    margin:50px 0px;
+    padding:0px 5px;
+    font:300 12px Gotham;
+    color:#ed0295;
+}
+/* monitoring subactive css */
+#subActive{
+    height:20%;
+    background-color:#ffffff;
+    /* margin-bottom:10px; */
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    /* display: flex; */
+    justify-content: space-between;
+    /* align-items:center; */
+    /* flex:8; */
+    transition: 4s  ;
+    padding:0px 30px;
+    display: none;
+}
+.MonTextContainer{
+    display: flex;
+    justify-content: center;
+}
+#MonTextStyle{
+    font:bold 16px Gotham;
+    color:#717171;
+    padding:52px 5px;
+}
+#MonValue{
+    padding:52px 5px;
+    font:bold 28px Gotham;
+    color: #ed0295;
+}
+#Monuse{
+    padding:52px 5px;
+    font:300 12px Gotham;
+    color: #ed0295;
+}
+
+/* inventory inactive */
+#inActive{
+    height:50%;
+    background-color:#ffffff;
+    margin-bottom:10px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    transition: 4s  ;
+    /* flex:8; */
+    display: none;
+}
+#TextStyleinactive{
+    font:bold 16px Gotham;
+    color:#717171;
+    padding:20px 5px;
+}
+#sixStyleinactive{
+    margin-top:45px;
+    font:bold 28px Gotham;
+    color:#ed0295;
+}
+#currentinactive{
+    margin-top:50px;
+    padding:0px 5px;
+    font:300 12px Gotham;
+    color:#ed0295;
+}
+#Last30Daysinactive{
+    font:300 12px Gotham;
+    color:#777777;
+    padding:2px 5px;
+}
+#LastValueinactive{
+    font:500 16px;
+}
+#lbsValueinactive{
+    font:500 14px Gotham;
+    color:#ed0295;
+}
+#lbsinactive{
+    padding:0px 3px;
+    font:500 10px Gotham;
+    color:#555555;
+}
+#asgValueinactive{
+    padding:0px 3px;
+    font:500 14px Gotham;
+    color:#ed0295;
+}
+#asginactive{
+    
+    font:500 10px Gotham;
+    color:#555555;
+}
+#s3Valueinactive{
+    font:500 14px Gotham;
+    color:#ed0295;
+}
+#s3inactive{
+   
+    font:500 10px Gotham;
+    color:#555555;
+}
+#ebsValueinactive{
+    font:500 14px Gotham;
+    color:#ed0295;
+}
+#ebsinactive{
+    padding:0px 5px;
+    font:500 10px Gotham;
+    color:#555555;
+}
+
+/* utilisation inactive1 css files */
+#inActive1{
+    padding:0px 10px;
+    height:50%;
+    background-color:#ffffff;
+    margin-bottom:10px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    transition: 4s  ;
+    /* flex:8; */
+    display: none;
+}
+#TextStyleinactive1{
+    font:bold 16px Gotham;
+    color:#717171;
+    padding:20px 5px;
+}
+#sixStyleinactive1{
+    margin-top:45px;
+    font:bold 28px Gotham;
+    color:#ed0295;
+}
+#currentinactive1{
+    margin-top:50px;
+    padding:0px 5px;
+    font:300 12px Gotham;
+    color:#ed0295;
+}
+#Last30Daysinactive1{
+    font:300 12px Gotham;
+    color:#777777;
+    padding:2px 5px;
+}
+#LastValueinactive1{
+    font:500 16px;
+}
+#lbsValueinactive1{
+    font:500 14px Gotham;
+    color:#ed0295;
+}
+#lbsinactive1{
+    padding:0px 15px;
+    font:500 10px Gotham;
+    color:#555555;
+}
+#asgValueinactive1{
+    padding:0px 3px;
+    font:500 14px Gotham;
+    color:#ed0295;
+}
+#asginactive1{
+    padding:0px 15px;
+    font:500 10px Gotham;
+    color:#555555;
+}
+#s3Valueinactive1{
+    font:500 14px Gotham;
+    color:#ed0295;
+}
+#s3inactive1{
+    padding:0px 15px;
+    font:500 10px Gotham;
+    color:#555555;
+}
+#ebsValueinactive1{
+    font:500 14px Gotham;
+    color:#ed0295;
+}
+#ebsinactive1{
+    padding:0px 15px;
+    font:500 10px 'Gotham';
+    color:#555555;
+}
+
+@font-face{
+    font-family: 'Gotham';
+    src: url('./../fonts/Gotham-Black.ttf');
+}

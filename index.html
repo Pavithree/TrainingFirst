@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Pacman</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="./css/reset.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    
+</head>
+<!-- <body class="bodyPosition"> -->
+    <body>
+
+    <section class="bodyPosition">
+    <header class="headerStyle grid_layout">
+        <div class="hamburgerIconPos">
+                <!-- <div class="hamburger"></div>
+                <div class="hamburger"></div>
+                <div class="hamburger"></div> -->
+                <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="#">About</a>
+                    <a href="#">Services</a>
+                    <a href="#">Clients</a>
+                    <a href="#">Contact</a>
+                  </div>
+                  
+                  
+                  <span style="font-size:30px;cursor:pointer" onclick="openNav()">
+                        <div class="hamburger"></div>
+                        <div class="hamburger"></div>
+                        <div class="hamburger"></div> 
+                  </span>
+        </div>
+        <div>
+                <img src="img/group-6.png" srcset="img/group-6@2x.png 2x,img/group-6@3x.png 3x" class="IconPos">
+        </div>
+        <div class="flexContainer">
+            <div>
+                <img src="img/notification.png" class="notificationIconPos"/>
+            </div>
+            <div>
+                <img src="img/combined-shape.png" class="userIconPos"/>
+            </div>
+           
+        </div>
+    </header>
+    <main class="mainstyle">
+    <div class="ApplicationContainer">
+        <div class="AllApplications">
+             <div><img src="img/walkin-grey.svg" class="squareIconPos"/></div> 
+             <div class="ApplicationStyle">ALL APPLICATION</div>
+             <div class="triangle-down"></div>
+        </div>
+        <button onclick="loadCustomer()"></button>
+        <div class="ApplicationStatus">
+            <div class="line"></div>
+            <div class="ApplicationStatusStyle">APPLICATION STATUS:</div>
+            <div class="Container">
+                <p id="ProductionId"></p>
+                <p class="Style">PRODUCTION</p>
+            </div>
+            <div class="Container">
+                    <p id="BuildId"></p>
+                    <p class="Style">BUILD</p>
+            </div>
+            <div class="Container">
+                    <p id="IntakeId"></p>
+                    <p class="Style">INTAKE</p>
+            </div>
+            <div class="Container securityBackground">
+                    <p class="security">SECURITY</p>
+                    <div class="greenLiveCircle"></div>
+            </div>
+
+        </div>
+    </div>
+    <!--start-->
+    <section class="ContainerBody">
+            <div id="FirstDiv">
+
+              <div id="active"> <!--cost active class-->
+                <div class="TextContainer">
+                    <img src="img/walkin-grey.svg"/>
+                    <p id="TextStyle">COST</p>
+                </div>
+                <div class="costGraph">
+                    <img src="img/costgraph.png" class="costGraphPos"/>
+                </div>
+                <div class="TextContaineractive">
+                    <p id="costActiveValue">$33.24K</p>
+                    <p id="costActiveData">/Day Run Rate<br>For AUgust 17th</p>
+                </div>
+              </div>
+              <!-- start -->
+              <div id="cost" onclick="changeConatiner()">
+                <div class="TextContainer">
+                    <img src="img/walkin-grey.svg"/>
+                    <p id="TextStylecost"></p>
+                </div>
+                <div class="TextContainer">
+                    <p id="twentyStyle"></p>
+                    <p id="DayRunRate">/Day<br>Run Rate</p>
+                </div>
+                <div class="bottomContainer">
+                    <p id="InstanceValue"></p>
+                    <p id="InstanceText">/Instances HR</p>
+                </div>
+              </div>
+              <!-- end -->
+              <!-- start -->
+              <div id="Monitoring" onclick="changeConatinerMonitor()">
+                <div class="TextContainer">
+                    <img src="img/walkin-grey.svg"/>
+                    <p id="TextStyleMonitor"></p>
+                </div>
+                <div class="TextContainer">
+                        <p id="threeStyle"></p>
+                        <p id="Requests">Requests<br>Last 15 minutes</p>
+                </div>
+                <div class="TextContainer">
+                        <p id="UniqueValue"></p>
+                        <p id="UniqueVisitor"> Unique Visitors</p>
+                </div>
+                <div class="bottomFlexContainer">
+                        <div>
+                            <p id="tmngValue"></p>
+                            <p id="tmng">TMNG</p>
+                        </div>
+                        <div>
+                            <p id="soclValue"></p>
+                            <p id="socl">SOCL</p>
+                        </div>
+                        <div>
+                            <p id="reblValue"></p>
+                            <p id="rebl">REBL</p>
+                        </div>
+                </div>
+              </div>
+              <!-- end -->
+              <div id="subActive">
+                <div class="MonTextContainer">
+                    <img src="img/walkin-grey.svg"/>
+                    <p id="MonTextStyle">MONITORING</p>
+                </div>
+                <div class="MonTextContainer">
+                    <p id="MonValue">1.19M</p>
+                    <p id="Monuse">Requests<br>On Aug 11</p>
+                </div>
+              </div>
+              <div id="inActivemidfirstone"></div>
+              <div id="inActivemidfirsttwo"></div>
+              <div id="monActive"></div>
+              <div id="monSubActive"></div>
+              
+
+            </div>
+              
+           
+            <div id="middleDiv">
+              <div id="activemid"></div>
+              <!-- start -->
+              <div id="Inventory" onclick="changeConatinerInventory()">
+                <div class="TextContainer">
+                    <img src="img/walkin-grey.svg"/>
+                    <p id="TextStyleInventory"></p>
+                </div>
+                <div class="TextContainer">
+                        <p id="sixStyle"></p>
+                        <p id="current">Current<br>Instances</p>
+                </div>
+                <div class="TextContainer">
+                        <p id="LastValue"></p>
+                        <p id="Last30Days"> Unique Last 30 days</p>
+                </div>
+                <div class="bottomFlexContainer">
+                        <div>
+                            <p id="lbsValue"></p>
+                            <p id="lbs">LBs</p>
+                        </div>
+                        <div>
+                            <p id="asgValue"></p>
+                            <p id="asg">ASG</p>
+                        </div>
+                        <div>
+                            <p id="s3Value"></p>
+                            <p id="s3">REBL</p>
+                        </div>
+                        <div>
+                                <p id="ebsValue"></p>
+                                <p id="ebs">EBS</p>
+                        </div>
+                </div>
+              </div>
+              <!-- end -->
+              <div id="inActive">
+                  <div class="TextContainer">
+                    <img src="img/walkin-grey.svg"/>
+                    <p id="TextStyleinactive">INVENTORY</p>
+                </div>
+                <div class="TextContainer">
+                        <p id="sixStyleinactive">3,690</p>
+                        <p id="currentinactive">Running<br>Instances</p>
+                </div>
+                <div class="TextContainer">
+                        <p id="LastValueinactive">18.64K</p>
+                        <p id="Last30Daysinactive"> Unique Last 30 days</p>
+                </div>
+                <div class="bottomFlexContainer">
+                        <div>
+                            <p id="lbsValueinactive">1393</p>
+                            <p id="lbsinactive">LBs</p>
+                        </div>
+                        <div>
+                            <p id="asgValueinactive">786</p>
+                            <p id="asginactive">ASG</p>
+                        </div>
+                        <div>
+                            <p id="s3Valueinactive">497</p>
+                            <p id="s3">REBL</p>
+                        </div>
+                        <div>
+                                <p id="ebsValueinactive">19917</p>
+                                <p id="ebsinactive">EBS</p>
+                        </div>
+                </div>
+              </div>
+              <!-- start -->
+              <div id="Utilisation" onclick="changeConatinerUtilisation()">
+                <div class="TextContainer">
+                    <img src="img/walkin-grey.svg"/>
+                    <p id="TextStyleUtilisation"></p>
+                </div>
+                <div class="TextContainer">
+                        <p id="nineStyle"></p>
+                        <p id="overall">overall</p>
+                </div>
+                <div class="bottomFlexContainerUtilization">
+                        <div>
+                            <div class="half-circle"></div>
+                            <p id="cpu"></p>
+                        </div>
+                        <div>
+                            <div class="half-circle"></div>
+                            <p id="io"></p>
+                        </div>
+                        <div>
+                            <div class="half-circle"></div>
+                            <p id="disk"></p>
+                        </div>
+                </div>
+              </div>
+              <!-- end -->
+              <div id="utActive"></div>
+              <div id="utSubActive"></div>
+              <div id="inActive1">
+                <div class="TextContainer">
+                    <img src="img/walkin-grey.svg"/>
+                    <p id="TextStyleinactive1">UTILIZATION</p>
+                </div>
+                <div class="TextContainer">
+                        <p id="sixStyleinactive1">5.07%</p>
+                        <p id="currentinactive1">Average CPU<br>Utilisation</p>
+                </div>
+                <div class="TextContainer">
+                        <!-- <p id="LastValueinactive1">18.64K</p> -->
+                        <p id="Last30Daysinactive1"> Last 30 days</p>
+                </div>
+                <div class="bottomFlexContainer">
+                        <div>
+                            <p id="lbsValueinactive1">292.89TB</p>
+                            <p id="lbsinactive1">READ</p>
+                        </div>
+                        <div>
+                            <p id="asgValueinactive1">716.25TB</p>
+                            <p id="asginactive1">WRITE</p>
+                        </div>
+                        <div>
+                            <p id="s3Valueinactive1">2.37TB</p>
+                            <p id="s3inactive1">I/P</p>
+                        </div>
+                        <div>
+                                <p id="ebsValueinactive1">2.36TB</p>
+                                <p id="ebsinactive1">O/P</p>
+                        </div>
+                </div>
+              </div>
+              <div id="subActivemid"></div>
+             
+            </div>
+              
+           
+            <div id="cornerDiv">
+              <div id="inActivecornerfirstone"></div>
+              <div id="inActivecornerfirsttwo"></div>
+            
+              <!-- start -->
+              <div id="Compliance" >
+                <div class="TextContainer">
+                    <img src="img/walkin-grey.svg"/>
+                    <p id="TextStyleCompliance"></p>
+                </div>
+                <div class="graphPos">
+                    <img src="img/graph.png" class="graphStyle"/>
+                    <p id="scanned">Last Scanned 50 minutes ago</p>
+                </div>
+                <div class="bottomFlexContainerCompliance">
+                    <div>
+                        <p id="itemsValue"></p>
+                        <p id="items">Items Scanned</p>
+                    </div>
+                    <div>
+                        <div class="containerCompliance">
+                        <p id="issuesValue"></p>
+                        <p id="line">/</p>
+                        <p id="new"></p>
+                        </div>
+                        <p id="issues">Issues Found</p>
+                    </div>
+                    <div>
+                        <p id="autoValue"></p>
+                        <p id="auto">Auto-Fixed</p>
+                    </div>
+                    <div>
+                            <p id="remainingValue"></p>
+                            <p id="remaining">Issues Remaining</p>
+                    </div>
+            </div>
+              </div>
+              <!-- end -->
+              <div id="inActive2"></div>
+              <!-- start -->
+              <div id="Storage">
+                <div class="StorageTextContainer">
+                    <img src="img/walkin-grey.svg"/>
+                    <p id="TextStyleStorage"></p>
+                </div>
+                <div class="StorageTextContainer">
+                    <p id="inuseValue"></p>
+                    <p id="inuse"></p>
+                </div>
+              </div>
+              <!-- end -->
+              <div id="inActive3"></div>
+            </div>
+            
+        </section>
+    <!--end-->
+</main>
+
+</section>  
+<script src="js/app.js" type="text/javascript"></script>
+</body>
+</html>
